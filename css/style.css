@@ -15,7 +15,7 @@ body {
   color: var(--main-color);
 }
 .link {
-  display: block;
+  /* display: block; */
   text-decoration: none;
   color: var(--main-color);
 }
@@ -108,12 +108,25 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+/* .link-item::before {
+  content: '';
+  white-space: ;
+  width: 16px;
+  height: 12px;
+  background-size: cover;
+  align-items: center;
+  margin-right: 10px;
+
+  background-size: contain;
+  background-image: url(../imgs/SVG/smartphone.svg);
+} */
 
 .nav-list .link:hover,
 .nav-list .link:focus {
@@ -130,12 +143,21 @@ img {
 }
 
 /*------------------------ Hero ------------------------- */
+.overlay {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../imgs/bg-fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
-  background-color: var(--background);
 }
 
 .hero-title {
@@ -168,6 +190,7 @@ img {
 }
 
 /*------------------------ Preference ------------------------- */
+
 .features {
   display: flex;
 }
@@ -176,6 +199,24 @@ img {
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.icons {
+  display: inline-flex;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgc-color);
+  border-radius: 4px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 .features-title {
   margin-bottom: 10px;
